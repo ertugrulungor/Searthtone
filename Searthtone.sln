@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searthtone", "Searthtone\Searthtone.csproj", "{B708821B-4C14-486A-944C-BD35109062A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTest", "LibraryTest\LibraryTest.csproj", "{DA175AB3-6D2A-4812-B13D-F6A75F123C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searthtone.Test", "Searthtone.Test\Searthtone.Test.csproj", "{6FDC5D1B-4D84-46B6-8ED3-83760CD3B8B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B708821B-4C14-486A-944C-BD35109062A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B708821B-4C14-486A-944C-BD35109062A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B708821B-4C14-486A-944C-BD35109062A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B708821B-4C14-486A-944C-BD35109062A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA175AB3-6D2A-4812-B13D-F6A75F123C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA175AB3-6D2A-4812-B13D-F6A75F123C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA175AB3-6D2A-4812-B13D-F6A75F123C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA175AB3-6D2A-4812-B13D-F6A75F123C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDC5D1B-4D84-46B6-8ED3-83760CD3B8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDC5D1B-4D84-46B6-8ED3-83760CD3B8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDC5D1B-4D84-46B6-8ED3-83760CD3B8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDC5D1B-4D84-46B6-8ED3-83760CD3B8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

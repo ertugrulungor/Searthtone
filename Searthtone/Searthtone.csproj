@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B708821B-4C14-486A-944C-BD35109062A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Searthtone</RootNamespace>
+    <AssemblyName>Searthtone</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type\GameStateType.cs" />
+    <Compile Include="Service\CardService.cs" />
+    <Compile Include="Type\PlayerType.cs" />
+    <Compile Include="Type\CardStateType.cs" />
+    <Compile Include="Exceptions\GameOverException.cs" />
+    <Compile Include="Exceptions\NotStartedException.cs" />
+    <Compile Include="Exceptions\GameAlreadyStartedException.cs" />
+    <Compile Include="Exceptions\GameNotFinishException.cs" />
+    <Compile Include="Exceptions\CardNullException.cs" />
+    <Compile Include="Exceptions\CardNotReadyException.cs" />
+    <Compile Include="Exceptions\BattlegroundNotContainsThisCardException.cs" />
+    <Compile Include="Exceptions\FaceNullException.cs" />
+    <Compile Include="Exceptions\PlayerCardCollectionNullException.cs" />
+    <Compile Include="Exceptions\PlayerCardCollectionUnderflowException.cs" />
+    <Compile Include="Exceptions\PlayerCardCollectionOverflowException.cs" />
+    <Compile Include="Exceptions\InsufficientManaException.cs" />
+    <Compile Include="Exceptions\InvalidMoveException.cs" />
+    <Compile Include="Exceptions\PickedCardsNotContainsThisCardException.cs" />
+    <Compile Include="Core\BattleGround.cs" />
+    <Compile Include="Core\Card.cs" />
+    <Compile Include="Core\Face.cs" />
+    <Compile Include="Core\Warrior.cs" />
+    <Compile Include="Dal\Context.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Service\" />
+    <Folder Include="Type\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Dal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
